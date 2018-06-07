@@ -11,10 +11,10 @@ express()
   .get('/cool', (req, res) => res.send(cool()))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 app.get('/times', (req, res) => {
-  let result = ''
-  const times = process.env.TIMES || 5
-  for (i = 0; i < times; i++) {
-    result += i + ' '
-  }
-  res.send(result)
+ $.ajax({
+        type: "GET",
+        url: "https://c0esh338.caspio.com/dp/94b93000649566bbdbf74bc8babd",
+        data: { },
+    });
+  res.render(data)
 })
